@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
-        if (NavMeshAgent.isOnNavMesh &&   NavMeshAgent.pathPending == false)
+        if ( NavMeshAgent.isOnNavMesh &&   NavMeshAgent.pathPending == false)
         {
             if (NavMeshAgent.remainingDistance <= NavMeshAgent.stoppingDistance)
             {

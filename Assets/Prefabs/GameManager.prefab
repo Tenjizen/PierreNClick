@@ -49,3 +49,6 @@ MonoBehaviour:
   _layerGround:
     serializedVersion: 2
     m_Bits: 64
+  _layerInteractable:
+    serializedVersion: 2
+    m_Bits: 128

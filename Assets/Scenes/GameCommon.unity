@@ -224,6 +224,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 875704850, guid: c5e73f29ba929354f92d68c71f8bb15d, type: 3}
+      propertyPath: _prefabItem
+      value: 
+      objectReference: {fileID: 1121867065474984522, guid: c94ce08e656811c43afa5e1d30720a82, type: 3}
     - target: {fileID: 3772212181781777417, guid: c5e73f29ba929354f92d68c71f8bb15d, type: 3}
       propertyPath: m_Name
       value: CanvasInventory
@@ -314,30 +318,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5e73f29ba929354f92d68c71f8bb15d, type: 3}
---- !u!1 &875704848 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3772212181781777417, guid: c5e73f29ba929354f92d68c71f8bb15d, type: 3}
-  m_PrefabInstance: {fileID: 875704847}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &875704849 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3772212181436927198, guid: c5e73f29ba929354f92d68c71f8bb15d, type: 3}
-  m_PrefabInstance: {fileID: 875704847}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &875704850
+--- !u!114 &875704850 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 875704850, guid: c5e73f29ba929354f92d68c71f8bb15d, type: 3}
+  m_PrefabInstance: {fileID: 875704847}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875704848}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 115ee7f5b280f0c41892adb3a05739fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefabItem: {fileID: 102235254421204489, guid: 7f010566e9fed004586e218e8ffb9922, type: 3}
-  _panel: {fileID: 875704849}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,17 +502,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 613044626115554611, guid: 8af801c63b0dd0c49a68fe559e1ba725, type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
     - target: {fileID: 613044626115554615, guid: 8af801c63b0dd0c49a68fe559e1ba725, type: 3}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 613044626115554615, guid: 8af801c63b0dd0c49a68fe559e1ba725, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 613044626115554615, guid: 8af801c63b0dd0c49a68fe559e1ba725, type: 3}
       propertyPath: m_LocalPosition.x
@@ -563,8 +546,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 613044626115554611, guid: 8af801c63b0dd0c49a68fe559e1ba725, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af801c63b0dd0c49a68fe559e1ba725, type: 3}
 --- !u!1001 &2320441373594145636
 PrefabInstance:
@@ -625,10 +607,6 @@ PrefabInstance:
       propertyPath: <Player>k__BackingField
       value: 
       objectReference: {fileID: 1454678767}
-    - target: {fileID: 2320441373637073085, guid: 948a962f37a5c7b4db9e050aff743baf, type: 3}
-      propertyPath: _layerInteractable.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
     - target: {fileID: 2320441373637073085, guid: 948a962f37a5c7b4db9e050aff743baf, type: 3}
       propertyPath: <CanvasInventory>k__BackingField
       value: 
