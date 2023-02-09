@@ -51,10 +51,8 @@ public class GameManager : MonoBehaviour
 
                     if (interactable != null)
                     {
-
                         Player.Move(hit.point);
-                        if (Player.NavMeshAgent.pathStatus == NavMeshPathStatus.PathComplete)
-                            interactable.Execute();
+                        Player.Interactable = interactable;
                     }
                 }
             }
@@ -62,6 +60,7 @@ public class GameManager : MonoBehaviour
             {
                 Debug.DrawRay(hit.point, transform.TransformDirection(Vector3.up), Color.red, 10f);
                 Player.Move(hit.point);
+                Player.Interactable = null;
             }
 
 
