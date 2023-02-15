@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     [field: SerializeField] public PlayerController Player { get; private set; }
-    [field: SerializeField] public CanvasInventory CanvasInventory { get; private set; }
     public const string NextSceneKey = "NextScene";
 
     [SerializeField] private LayerMask _layerGround;
@@ -36,6 +35,8 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         if (MainGame.Instance.State == MainGame.GameState.FreeRoam)
+        {
+
             if (Input.GetMouseButtonDown(0))
             {
                 Vector3 mousePosWorld = Input.mousePosition;
@@ -63,13 +64,7 @@ public class GameManager : MonoBehaviour
                     Player.Move(hit.point);
                     Player.Interactable = null;
                 }
-
-
             }
-    }
-
-    public void AddItem(Item item)
-    {
-        CanvasInventory.AddItem(item);
+        }
     }
 }

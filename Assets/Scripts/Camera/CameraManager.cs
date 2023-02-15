@@ -10,7 +10,6 @@ public class CameraManager : MonoBehaviour
     public CameraPos CameraPos;
     private void Awake()
     {
-        print("Camera");
         if (Instance == null)
             Instance = this;
         else
@@ -22,12 +21,6 @@ public class CameraManager : MonoBehaviour
         else
             Debug.LogError("cc ckc");
     }
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (CameraPos != null)

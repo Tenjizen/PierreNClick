@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class PinjController : MonoBehaviour, IInteractable
 {
-    [SerializeField] string StringID;
+    [SerializeField] public string StringID;
     [SerializeField] int IntID;
     [SerializeField] List<Information> _firstTalk;
     [SerializeField] List<Information> _alreadyTalking;
     [HideInInspector] public bool AlreadyTalking;
 
+    private void Start()
+    {
+        if (AllInteractable.Instance.IInteractableUses.ContainsKey(StringID))
+        {
+            this.AlreadyTalking = true;
+        }
+    }
     public void Execute()
     {
         MainGame.Instance.PinjController = this;

@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 1121867065474984525}
   - component: {fileID: 1121867065474984524}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ItemInCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -270,3 +270,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a059fd900e3a5b04881fa2c364c5ced9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  image: {fileID: 1121867065474984526}

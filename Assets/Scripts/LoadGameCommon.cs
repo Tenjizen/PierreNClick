@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NextSceneStp : MonoBehaviour
+public class LoadGameCommon : MonoBehaviour
 {
     void Start()
     {
