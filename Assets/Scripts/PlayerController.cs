@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
 {
     public NavMeshAgent NavMeshAgent;
 
+    public bool CanMove = true;
+
     public IInteractable Interactable;
     private void Awake()
     {

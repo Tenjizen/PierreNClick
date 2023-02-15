@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        if(MainGame.Instance.State == MainGame.GameState.FreeRoam)
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 mousePosWorld = Input.mousePosition;
