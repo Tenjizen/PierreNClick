@@ -35,37 +35,37 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if(MainGame.Instance.State == MainGame.GameState.FreeRoam)
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector3 mousePosWorld = Input.mousePosition;
-
-            Ray ray = Camera.main.ScreenPointToRay(mousePosWorld);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, float.MaxValue, _layerInteractable))
+        if (MainGame.Instance.State == MainGame.GameState.FreeRoam)
+            if (Input.GetMouseButtonDown(0))
             {
-                Debug.DrawRay(hit.point, transform.TransformDirection(Vector3.up), Color.green, 10f);
-                if (hit.collider != null)
-                {
-                    IInteractable interactable = hit.collider.GetComponent<IInteractable>();
+                Vector3 mousePosWorld = Input.mousePosition;
 
-                    if (interactable != null)
+                Ray ray = Camera.main.ScreenPointToRay(mousePosWorld);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit, float.MaxValue, _layerInteractable))
+                {
+                    Debug.DrawRay(hit.point, transform.TransformDirection(Vector3.up), Color.green, 10f);
+                    if (hit.collider != null)
                     {
-                        Player.Move(hit.point);
-                        Player.Interactable = interactable;
+                        IInteractable interactable = hit.collider.GetComponent<IInteractable>();
+
+                        if (interactable != null)
+                        {
+                            Player.Move(hit.point);
+                            Player.Interactable = interactable;
+                        }
                     }
                 }
-            }
-            else if (Physics.Raycast(ray, out hit, float.MaxValue, _layerGround))
-            {
-                Debug.DrawRay(hit.point, transform.TransformDirection(Vector3.up), Color.red, 10f);
-                Player.Move(hit.point);
-                Player.Interactable = null;
-            }
+                else if (Physics.Raycast(ray, out hit, float.MaxValue, _layerGround))
+                {
+                    Debug.DrawRay(hit.point, transform.TransformDirection(Vector3.up), Color.red, 10f);
+                    Player.Move(hit.point);
+                    Player.Interactable = null;
+                }
 
 
-        }
+            }
     }
 
     public void AddItem(Item item)

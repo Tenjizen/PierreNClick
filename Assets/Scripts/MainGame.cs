@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MainGame : MonoBehaviour
 {
-    public enum GameState { FreeRoam, Dialog}
+    public enum GameState { FreeRoam, Dialog }
 
     [SerializeField] private PlayerController _playerController;
 
@@ -16,15 +16,18 @@ public class MainGame : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if (Instance == null)
+            Instance = this;
+        else
+            Debug.LogError("allo?");
     }
+
 
     void Start()
     {
         DialogManager.Instance.onShowDialog += () =>
         {
             State = GameState.Dialog;
-
         };
         DialogManager.Instance.onCloseDialog += () =>
         {
@@ -43,6 +46,6 @@ public class MainGame : MonoBehaviour
             _playerController.CanMove = false;
         }
 
-    
+
     }
 }
