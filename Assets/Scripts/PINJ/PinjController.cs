@@ -5,7 +5,7 @@ using UnityEngine;
 public class PinjController : MonoBehaviour, IInteractable
 {
     [SerializeField] public string StringID;
-    [SerializeField] int IntID;
+    [SerializeField] string Name;
     [SerializeField] List<Information> _firstTalk;
     [SerializeField] List<Information> _alreadyTalking;
     [HideInInspector] public bool AlreadyTalking;
@@ -22,7 +22,7 @@ public class PinjController : MonoBehaviour, IInteractable
         MainGame.Instance.PinjController = this;
 
         if (AllInteractable.Instance.IInteractableUses.ContainsKey(StringID) == false)
-            AllInteractable.Instance.IInteractableUses.Add(StringID, IntID);
+            AllInteractable.Instance.IInteractableUses.Add(Name, StringID);
 
         if (AlreadyTalking == false)
             StartCoroutine(DialogManager.Instance.ShowDialog(_firstTalk));

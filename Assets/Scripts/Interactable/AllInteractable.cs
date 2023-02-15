@@ -7,7 +7,7 @@ public class AllInteractable : MonoBehaviour
     public static AllInteractable Instance;
 
 
-    public Dictionary<string,int> IInteractableUses = new Dictionary<string, int>();
+    public Dictionary<string,string> IInteractableUses = new Dictionary<string, string>();
 
     private void Awake()
     {

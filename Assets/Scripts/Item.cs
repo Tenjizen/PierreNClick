@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Item : MonoBehaviour, IInteractable
 {
+    [field: SerializeField] public string ID { get; private set; }
     [field: SerializeField] public string Name { get; private set; }
     [field: SerializeField] public Sprite Sprite { get; private set; }
-    [field: SerializeField] public int ID { get; private set; }
 
     private void Start()
     {
