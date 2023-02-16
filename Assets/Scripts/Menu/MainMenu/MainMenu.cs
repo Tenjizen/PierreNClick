@@ -10,7 +10,8 @@ public class MainMenu : MonoBehaviour
 
     //public Image imageFade;
 
-    public Image Title;
+    //public Image Title;
+    public GameObject Title;
 
     public GameObject accueil;
     public GameObject parameter;
@@ -21,9 +22,9 @@ public class MainMenu : MonoBehaviour
     private void Update()
     {
         if (accueil.gameObject.activeInHierarchy == true)
-            Title.enabled = true;
+            Title.SetActive(true);
         else
-            Title.enabled = false;
+            Title.SetActive(false);
     
     }
     private void Awake()
@@ -35,7 +36,7 @@ public class MainMenu : MonoBehaviour
     }
     private void Start()
     {
-        StartCoroutine(AudioManager.Instance.IEPlayMusicSound("snd_music_menu"));
+        //StartCoroutine(AudioManager.Instance.IEPlayMusicSound("snd_music_menu"));
 
     }
     public void OnClickPlay()
