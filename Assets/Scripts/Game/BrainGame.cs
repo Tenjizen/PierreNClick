@@ -6,11 +6,10 @@ public class BrainGame : MonoBehaviour
 {
     public static BrainGame Instance;
 
-    public bool Burin;
-    public bool Painceau;
-    public bool Peinture;
-    public bool Clef;
-    public bool Feuille;
+    public bool Chisel;
+    public bool Paint;
+    public bool Paper;
+    public bool Pen;
 
 
     private void Start()

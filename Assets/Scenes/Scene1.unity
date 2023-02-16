@@ -123,6 +123,67 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 1d8738f1d2ad9d34e91d3a915940672b, type: 2}
+--- !u!1001 &130633641
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1158851637928359172, guid: 9d679c710fb915e46baa69fc17100b20, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158851638809594892, guid: 9d679c710fb915e46baa69fc17100b20, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158851638809594892, guid: 9d679c710fb915e46baa69fc17100b20, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158851638809594892, guid: 9d679c710fb915e46baa69fc17100b20, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158851638809594892, guid: 9d679c710fb915e46baa69fc17100b20, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158851638809594892, guid: 9d679c710fb915e46baa69fc17100b20, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158851638809594892, guid: 9d679c710fb915e46baa69fc17100b20, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158851638809594892, guid: 9d679c710fb915e46baa69fc17100b20, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158851638809594892, guid: 9d679c710fb915e46baa69fc17100b20, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158851638809594892, guid: 9d679c710fb915e46baa69fc17100b20, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158851638809594892, guid: 9d679c710fb915e46baa69fc17100b20, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158851638809594892, guid: 9d679c710fb915e46baa69fc17100b20, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158851638809594895, guid: 9d679c710fb915e46baa69fc17100b20, type: 3}
+      propertyPath: m_Name
+      value: Drum
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d679c710fb915e46baa69fc17100b20, type: 3}
 --- !u!1001 &370667451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -192,12 +253,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3199906817139403948, guid: db13d6c4c7e00614ba0ee228c36f45ef, type: 3}
+      propertyPath: Name
+      value: Pierre
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199906817139403948, guid: db13d6c4c7e00614ba0ee228c36f45ef, type: 3}
       propertyPath: IntID
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3199906817139403948, guid: db13d6c4c7e00614ba0ee228c36f45ef, type: 3}
       propertyPath: StringID
-      value: Pierre
+      value: PierreScene1
       objectReference: {fileID: 0}
     - target: {fileID: 3199906817139403948, guid: db13d6c4c7e00614ba0ee228c36f45ef, type: 3}
       propertyPath: _alreadyTalking.Array.data[0]._name
@@ -260,6 +325,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2229883733112986798, guid: b5242ece83c337b4ba2cf6c0bef7c7b4, type: 3}
+      propertyPath: ID
+      value: PeintureDeMosard
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229883733112986798, guid: b5242ece83c337b4ba2cf6c0bef7c7b4, type: 3}
+      propertyPath: Name
+      value: MosardPaint
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229883733112986798, guid: b5242ece83c337b4ba2cf6c0bef7c7b4, type: 3}
+      propertyPath: itemData.DataID
+      value: inventory_Papier
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229883733112986798, guid: b5242ece83c337b4ba2cf6c0bef7c7b4, type: 3}
+      propertyPath: itemData.DataName
+      value: Paper
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229883733112986798, guid: b5242ece83c337b4ba2cf6c0bef7c7b4, type: 3}
+      propertyPath: itemData.DataSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f8c9467a892580344bb697526dac0d13, type: 3}
+    - target: {fileID: 2229883733112986798, guid: b5242ece83c337b4ba2cf6c0bef7c7b4, type: 3}
+      propertyPath: itemData.DataItemDrop
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2229883733547203408, guid: b5242ece83c337b4ba2cf6c0bef7c7b4, type: 3}
       propertyPath: m_Name
       value: Paint
@@ -414,6 +503,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1357880798224459044, guid: 5813251fb3db38c408e94b08abab5c9c, type: 3}
+      propertyPath: ID
+      value: StatueDeMosard
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357880798224459044, guid: 5813251fb3db38c408e94b08abab5c9c, type: 3}
+      propertyPath: Name
+      value: MosardStatue
+      objectReference: {fileID: 0}
     - target: {fileID: 2098853963809952665, guid: 5813251fb3db38c408e94b08abab5c9c, type: 3}
       propertyPath: m_Name
       value: Statue
@@ -461,10 +558,6 @@ PrefabInstance:
     - target: {fileID: 3240227251356822884, guid: 5813251fb3db38c408e94b08abab5c9c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188182147234090010, guid: 5813251fb3db38c408e94b08abab5c9c, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5813251fb3db38c408e94b08abab5c9c, type: 3}
@@ -574,12 +667,28 @@ PrefabInstance:
       value: Item (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4658619477847735747, guid: efbe32b1a28a44244b7343bdd21acb42, type: 3}
-      propertyPath: <ID>k__BackingField
-      value: 2
+      propertyPath: itemDrop
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4658619477847735747, guid: efbe32b1a28a44244b7343bdd21acb42, type: 3}
+      propertyPath: itemData.DataID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658619477847735747, guid: efbe32b1a28a44244b7343bdd21acb42, type: 3}
+      propertyPath: itemData.DataName
+      value: Chisel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658619477847735747, guid: efbe32b1a28a44244b7343bdd21acb42, type: 3}
+      propertyPath: <ID>k__BackingField
+      value: inventory_Pen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658619477847735747, guid: efbe32b1a28a44244b7343bdd21acb42, type: 3}
+      propertyPath: itemData.DataSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e5600378dd761e64d9423790c482bf36, type: 3}
+    - target: {fileID: 4658619477847735747, guid: efbe32b1a28a44244b7343bdd21acb42, type: 3}
       propertyPath: <Name>k__BackingField
-      value: Shpere2
+      value: Pen
       objectReference: {fileID: 0}
     - target: {fileID: 4658619477847735751, guid: efbe32b1a28a44244b7343bdd21acb42, type: 3}
       propertyPath: m_RootOrder
@@ -681,6 +790,14 @@ PrefabInstance:
     - target: {fileID: 4782434260650529599, guid: 3bd610dcc5695f34cbc30505e81f8501, type: 3}
       propertyPath: m_Name
       value: Chandelier
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885624557327097831, guid: 3bd610dcc5695f34cbc30505e81f8501, type: 3}
+      propertyPath: ID
+      value: ChandelierScene1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885624557327097831, guid: 3bd610dcc5695f34cbc30505e81f8501, type: 3}
+      propertyPath: Name
+      value: ChandelierS1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bd610dcc5695f34cbc30505e81f8501, type: 3}
@@ -850,17 +967,37 @@ PrefabInstance:
       value: Item
       objectReference: {fileID: 0}
     - target: {fileID: 4658619477847735747, guid: efbe32b1a28a44244b7343bdd21acb42, type: 3}
-      propertyPath: <ID>k__BackingField
+      propertyPath: DataID
+      value: Inventory_Chisel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658619477847735747, guid: efbe32b1a28a44244b7343bdd21acb42, type: 3}
+      propertyPath: DataName
+      value: Chisel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658619477847735747, guid: efbe32b1a28a44244b7343bdd21acb42, type: 3}
+      propertyPath: itemDrop
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4658619477847735747, guid: efbe32b1a28a44244b7343bdd21acb42, type: 3}
+      propertyPath: DataSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e5600378dd761e64d9423790c482bf36, type: 3}
+    - target: {fileID: 4658619477847735747, guid: efbe32b1a28a44244b7343bdd21acb42, type: 3}
+      propertyPath: <ID>k__BackingField
+      value: inventory_Paint
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658619477847735747, guid: efbe32b1a28a44244b7343bdd21acb42, type: 3}
       propertyPath: <Name>k__BackingField
-      value: Tableau
+      value: Paint
       objectReference: {fileID: 0}
     - target: {fileID: 4658619477847735747, guid: efbe32b1a28a44244b7343bdd21acb42, type: 3}
       propertyPath: <Sprite>k__BackingField
       value: 
-      objectReference: {fileID: 21300000, guid: b855117e0a23a0647a1086032e2e276e, type: 3}
+      objectReference: {fileID: 21300000, guid: 3a0c527d7f890d64a9b56b086e6e766a, type: 3}
+    - target: {fileID: 4658619477847735747, guid: efbe32b1a28a44244b7343bdd21acb42, type: 3}
+      propertyPath: <itemDrop>k__BackingField
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4658619477847735751, guid: efbe32b1a28a44244b7343bdd21acb42, type: 3}
       propertyPath: m_RootOrder
       value: 4

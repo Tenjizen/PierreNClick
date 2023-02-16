@@ -21,16 +21,4 @@ public class AllInteractable : MonoBehaviour
         }
         DontDestroyOnLoad(this);
     }
-
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            foreach (var item in IInteractableUses)
-            {
-                Debug.Log(item.Value + "value / key" + item.Key);
-            }
-        }
-    }
 }

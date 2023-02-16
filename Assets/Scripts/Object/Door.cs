@@ -10,7 +10,7 @@ public class Door : MonoBehaviour, IInteractable
 
     public void Execute()
     {
-        if (_needObject == true && BrainGame.Instance.Feuille == true)
+        if (_needObject == true && BrainGame.Instance.Paper == true)
         {
             GameManager.Instance.Player.Move(this.transform.position);
             PlayerPrefs.SetString(GameManager.NextSceneKey, _nextScene);

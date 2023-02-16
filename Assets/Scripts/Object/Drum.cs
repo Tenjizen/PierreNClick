@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Drum : MonoBehaviour
+public class Drum : MonoBehaviour, IInteractable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public AudioClip AudioClip;
 
-    // Update is called once per frame
-    void Update()
+    public void Execute()
     {
-        
+        Debug.Log("JOUER SON");
     }
 }

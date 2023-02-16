@@ -242,11 +242,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52db9a872139f0042b5516cfb2d296c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Burin: 0
-  Painceau: 0
-  Peinture: 0
-  Clef: 0
-  Feuille: 0
+  Chisel: 0
+  Paint: 0
+  Paper: 0
+  Pen: 0
 --- !u!4 &976492609
 Transform:
   m_ObjectHideFlags: 0
