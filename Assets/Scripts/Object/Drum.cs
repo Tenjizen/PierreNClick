@@ -9,5 +9,7 @@ public class Drum : MonoBehaviour, IInteractable
     public void Execute()
     {
         Debug.Log("JOUER SON");
+        //AudioManager.Instance.PlaySFXSound(""));
+
     }
 }
