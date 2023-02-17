@@ -1799,7 +1799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1961493183570051100, guid: aace4f24fa3fad146aee0046c7a30d70, type: 3}
       propertyPath: m_text
-      value: Name
+      value: "Hod\xE9 Sacha"
       objectReference: {fileID: 0}
     - target: {fileID: 1961493183570051100, guid: aace4f24fa3fad146aee0046c7a30d70, type: 3}
       propertyPath: m_fontAsset
@@ -1903,7 +1903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3810214445583117495, guid: aace4f24fa3fad146aee0046c7a30d70, type: 3}
       propertyPath: m_text
-      value: Name
+      value: Lepers Nicolas
       objectReference: {fileID: 0}
     - target: {fileID: 3810214445583117495, guid: aace4f24fa3fad146aee0046c7a30d70, type: 3}
       propertyPath: m_fontAsset
@@ -1931,7 +1931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4446226021047057075, guid: aace4f24fa3fad146aee0046c7a30d70, type: 3}
       propertyPath: m_text
-      value: Name
+      value: Bastleer Cyane
       objectReference: {fileID: 0}
     - target: {fileID: 4446226021047057075, guid: aace4f24fa3fad146aee0046c7a30d70, type: 3}
       propertyPath: m_fontAsset
@@ -2407,7 +2407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7700979917775713194, guid: aace4f24fa3fad146aee0046c7a30d70, type: 3}
       propertyPath: m_text
-      value: Name
+      value: Logez Remi
       objectReference: {fileID: 0}
     - target: {fileID: 7700979917775713194, guid: aace4f24fa3fad146aee0046c7a30d70, type: 3}
       propertyPath: m_fontAsset
@@ -2439,7 +2439,7 @@ PrefabInstance:
       objectReference: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 8620749295543538043, guid: aace4f24fa3fad146aee0046c7a30d70, type: 3}
       propertyPath: m_text
-      value: Name
+      value: Lanuzel Alicia
       objectReference: {fileID: 0}
     - target: {fileID: 8620749295543538043, guid: aace4f24fa3fad146aee0046c7a30d70, type: 3}
       propertyPath: m_fontAsset
