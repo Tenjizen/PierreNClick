@@ -12,7 +12,7 @@ public class PinjController : MonoBehaviour, IInteractable
 
     private void Start()
     {
-        if (AllInteractable.Instance.IInteractableUses.ContainsKey(StringID))
+        if (AllInteractable.Instance.IInteractableUses.ContainsValue(StringID))
         {
             this.AlreadyTalking = true;
         }
@@ -21,12 +21,14 @@ public class PinjController : MonoBehaviour, IInteractable
     {
         MainGame.Instance.PinjController = this;
 
-        if (AllInteractable.Instance.IInteractableUses.ContainsKey(StringID) == false)
+        if (AllInteractable.Instance.IInteractableUses.ContainsValue(StringID) == false)
             AllInteractable.Instance.IInteractableUses.Add(Name, StringID);
 
         if (AlreadyTalking == false)
             StartCoroutine(DialogManager.Instance.ShowDialog(_firstTalk));
-        else
+        else if (_alreadyTalking.Count > 0)
             StartCoroutine(DialogManager.Instance.ShowDialog(_alreadyTalking));
+        else
+            StartCoroutine(DialogManager.Instance.ShowDialog(_firstTalk));
     }
 }

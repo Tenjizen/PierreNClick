@@ -7,12 +7,15 @@ public class PlayerController : MonoBehaviour
 {
     public NavMeshAgent NavMeshAgent;
 
+
+
     public bool CanMove = true;
     public Animator Animator;
 
     public IInteractable Interactable;
     private void Awake()
     {
+        Debug.Log("spawn");
         NavMeshAgent = GetComponent<NavMeshAgent>();
     }
     private void Update()

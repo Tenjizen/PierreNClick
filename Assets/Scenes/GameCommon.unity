@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee93dac292427d4b85134796150dc09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerController: {fileID: 499204496}
+  PlayerController: {fileID: 499204496}
   State: 0
   PinjController: {fileID: 0}
 --- !u!4 &145438842
@@ -353,6 +353,10 @@ PrefabInstance:
     - target: {fileID: 613044626115554608, guid: 8af801c63b0dd0c49a68fe559e1ba725, type: 3}
       propertyPath: m_Name
       value: Player 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 613044626115554608, guid: 8af801c63b0dd0c49a68fe559e1ba725, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 613044626115554615, guid: 8af801c63b0dd0c49a68fe559e1ba725, type: 3}
       propertyPath: m_RootOrder

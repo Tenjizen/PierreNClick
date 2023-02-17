@@ -6,7 +6,7 @@ public class MainGame : MonoBehaviour
 {
     public enum GameState { FreeRoam, Dialog }
 
-    [SerializeField] private PlayerController _playerController;
+    public PlayerController PlayerController;
 
     public GameState State;
 
@@ -39,11 +39,11 @@ public class MainGame : MonoBehaviour
     void Update()
     {
         if (State == GameState.FreeRoam)
-            _playerController.CanMove = true;
+            PlayerController.CanMove = true;
         else if (State == GameState.Dialog)
         {
             DialogManager.Instance.HandleUpdate();
-            _playerController.CanMove = false;
+            PlayerController.CanMove = false;
         }
 
 
