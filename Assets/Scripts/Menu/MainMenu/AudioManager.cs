@@ -75,21 +75,5 @@ public class AudioManager : MonoBehaviour
         }
         return null;
     }
-    /* all sound,
-    Dialogue1(fait)
-    Dialogue2(fait)
-    Dialogue3(fait)
-    Saperlipopette
-    snd_bloqué(fait normalement)
-    snd_door(fait)
-    snd_electric_death(fait)
-    snd_interface(fait)
-    snd_music_game_ambiance(fait)
-    snd_music_menu(fait)
-    snd_player_walk(fait)
-    snd_saw_death(fait)
-   
-    snd_victory(fait)
-     */
 
 }

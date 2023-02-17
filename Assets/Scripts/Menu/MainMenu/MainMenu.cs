@@ -36,7 +36,7 @@ public class MainMenu : MonoBehaviour
     }
     private void Start()
     {
-        //StartCoroutine(AudioManager.Instance.IEPlayMusicSound("snd_music_menu"));
+        StartCoroutine(AudioManager.Instance.IEPlayMusicSound("musique"));
 
     }
     public void OnClickPlay()

@@ -22,5 +22,6 @@ public class Door : MonoBehaviour, IInteractable
             PlayerPrefs.SetString(GameManager.NextSceneKey, _nextScene);
             SceneManager.LoadScene("GameCommon");
         }
+            AudioManager.Instance.PlaySFXSound("porte");
     }
 }

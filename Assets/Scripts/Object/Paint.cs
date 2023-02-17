@@ -24,6 +24,7 @@ public class Paint : MonoBehaviour, IInteractable
         {
             if (BrainGame.Instance.Pen == true && BrainGame.Instance.Paint == true)
             {
+                AudioManager.Instance.PlaySFXSound("crayon");
                 GameObject go = Instantiate(prefabDrop, this.transform);
                 if (go.GetComponent<Item>() != null)
                 {

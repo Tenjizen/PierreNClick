@@ -264,7 +264,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239965532}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &239965534
 Camera:
   m_ObjectHideFlags: 0
@@ -882,6 +882,7 @@ GameObject:
   - component: {fileID: 730479313}
   - component: {fileID: 730479312}
   - component: {fileID: 730479311}
+  - component: {fileID: 730479315}
   m_Layer: 0
   m_Name: _AudioManager
   m_TagString: Untagged
@@ -1097,23 +1098,14 @@ MonoBehaviour:
   audioSourceMusic: {fileID: 730479312}
   audioSourceSFX: {fileID: 730479311}
   audioClips:
-  - {fileID: 8300000, guid: 773a3d3493e0f99418f990a829e9881d, type: 3}
-  - {fileID: 8300000, guid: e685700b90e181b4eb6f0d25b4ae24f9, type: 3}
-  - {fileID: 8300000, guid: 5fe307f212016d54fb43e612f3c09d26, type: 3}
-  - {fileID: 8300000, guid: 6e0d124550518ad49975fcc092e79b6b, type: 3}
-  - {fileID: 8300000, guid: f882751621af52c4b8ab3ed55a66a918, type: 3}
-  - {fileID: 8300000, guid: f8aef8fc140d2cf45ac5b52955caa8e9, type: 3}
-  - {fileID: 8300000, guid: f7b9ff9b73cb2d04989a28c0093522a2, type: 3}
-  - {fileID: 8300000, guid: 7ec29736503d1474781995d558347734, type: 3}
-  - {fileID: 8300000, guid: 023957e00e0b3874abb3bccc171e4cce, type: 3}
-  - {fileID: 8300000, guid: 1d3af05511f1140458446a1c493c5d75, type: 3}
-  - {fileID: 8300000, guid: 6a6c964d7f3ec7e4ead8b06a4809d30e, type: 3}
-  - {fileID: 8300000, guid: abc730eaa55cdc644abd614f6be6c00f, type: 3}
-  - {fileID: 8300000, guid: e4b82ad96af5bb542904f20c9adc0e1b, type: 3}
-  - {fileID: 8300000, guid: b78026d6c12e7a84aa08d868c1dff120, type: 3}
-  - {fileID: 8300000, guid: eb3d427123e4c3040996f7fefe2cd32c, type: 3}
+  - {fileID: 8300000, guid: 99513f07f8859254cb65397d5e310b66, type: 3}
+  - {fileID: 8300000, guid: 85afabf1c1bdc4649aeeb6ac70ded223, type: 3}
+  - {fileID: 8300000, guid: 8063b4518669ca149af5f2576848adc1, type: 3}
+  - {fileID: 8300000, guid: 3e51f98ea329ff5489c4f9cc0fdb7aa0, type: 3}
+  - {fileID: 8300000, guid: 6a6968a2e85568f46b24fbb804a95d71, type: 3}
+  - {fileID: 8300000, guid: 884130118d45dd648a591a479ef8dd93, type: 3}
   coroutine: 0
-  m_sliderMusicValue: 0.5
+  m_sliderMusicValue: 0.25
   m_sliderSfxValue: 0.5
 --- !u!4 &730479314
 Transform:
@@ -1130,6 +1122,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &730479315
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730479310}
+  m_Enabled: 1
 --- !u!1001 &768950304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1319,7 +1319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5103459787527855438, guid: f0d78aec4f9f4a14890dd2f39c3c94dc, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.49995
+      value: 0.24992499
       objectReference: {fileID: 0}
     - target: {fileID: 5103459787527855438, guid: f0d78aec4f9f4a14890dd2f39c3c94dc, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1343,7 +1343,7 @@ PrefabInstance:
       objectReference: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5103459787772808514, guid: f0d78aec4f9f4a14890dd2f39c3c94dc, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.49995
+      value: 0.24992499
       objectReference: {fileID: 0}
     - target: {fileID: 5103459787772808514, guid: f0d78aec4f9f4a14890dd2f39c3c94dc, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1351,11 +1351,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5103459787772808514, guid: f0d78aec4f9f4a14890dd2f39c3c94dc, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.49995
+      value: 0.24992499
       objectReference: {fileID: 0}
     - target: {fileID: 5103459787873964529, guid: f0d78aec4f9f4a14890dd2f39c3c94dc, type: 3}
       propertyPath: m_Value
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 5103459787873964529, guid: f0d78aec4f9f4a14890dd2f39c3c94dc, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
