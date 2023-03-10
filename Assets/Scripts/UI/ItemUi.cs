@@ -9,6 +9,6 @@ public class ItemUi : MonoBehaviour
     public void Initialize(Item item)
     {
         image.sprite = item.Sprite;
-        GetComponentInChildren<TMPro.TMP_Text>().text = item.Name;
+        //GetComponentInChildren<TMPro.TMP_Text>().text = item.Name;
     }
 }
